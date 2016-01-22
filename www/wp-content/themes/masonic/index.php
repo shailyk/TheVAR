@@ -11,6 +11,7 @@
 <?php get_header(); ?>
 
 <div class="site-content">
+	<br>
    <div id="slider">
    <?php 
     echo do_shortcode("[metaslider id=23]"); 

@@ -1,5 +1,5 @@
 /*
-Theme Name: Masonic
+	Theme Name: Masonic
 Theme URI: http://themegrill.com/themes/masonic/
 Author: ThemeGrill
 Author URI: http://themegrill.com
@@ -58,6 +58,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    padding: 0;
    vertical-align: baseline;
 }
+
 html {
    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
@@ -221,9 +222,10 @@ hr {
    height: 1px;
    margin:-3px 0 25px 23.5%;
    opacity: 0.22;
+   display:none;
 }
-.underline {
-	visibility:hidden;
+.underline { 
+   display:none;
    background: none repeat scroll 0 0 #ffc800;
    height: 5px;
    margin: 20px 0 0;
@@ -259,6 +261,7 @@ img {
 figure {
    margin: 0;
    overflow: hidden;
+    
 }
 table {
    margin: 0 0 1.5em;
@@ -272,6 +275,10 @@ th {
 }
 .button:hover{
    color:#1d1d1d;
+}
+
+#container {
+	width:70%;
 }
 /*--------------------------------------------------------------
 4.0 Forms
@@ -350,7 +357,6 @@ textarea {
    float: left;
    position: relative;
    width: 90%;
-   
 }
 nav ul {
    padding: 0px;
@@ -369,16 +375,16 @@ nav li a {
    text-decoration: none;
 }
 nav li a:hover {
-   color:#fff;
+   color:#000000;
    background: white;
 }
 nav li:hover ul a {
    background: white;
-   color:#fff;
+   color:#000000;
 }
 nav li:hover ul a:hover {
    background: white;
-   color:#fff;
+   color:#000000;
 }
 nav li ul {
    display: none;
@@ -406,8 +412,8 @@ nav ul li a:hover + .sub-menu, nav .sub-menu:hover {
    z-index:5000;
 }
 #masonic .current_page_item a, #masonic .current-menu-item a {
-   color:#fff;
-   background: #1d1d1d;
+   color:#000000;
+   background: #fff;
 }
 nav ul ul ul {
    left: 200px;
@@ -796,8 +802,9 @@ footer .blog-post{
 10.0 Content
 --------------------------------------------------------------*/
 .primary {
-   float: left;
-   margin-right: 4%;
+   #float: left;
+   #margin-right: 4%;
+   margin: 0 auto;
    width: 64.67%;
 }
 .secondary {
@@ -838,9 +845,10 @@ footer .blog-post{
    text-align: center;
    background-color:white;
 }
-.header-image img{
-	
+.header-image img{	
 	padding-top:10%;
+	padding-bottom:10%;
+	width:40%;
 }
 .site-branding {
    width: 100%;
@@ -884,7 +892,7 @@ footer .blog-post{
    margin: -10px 0 0;
 }
 .site-content {
-   padding:50px 0;
+   #padding:50px 0;
 }
 .angled-background {
    background: none repeat scroll 0 0 black;
@@ -904,14 +912,17 @@ footer .blog-post{
    background-color: white;
 }
 .blog-site-title {
-   float: left;
-   margin-left: 20px;
+   #float: left;
+   #margin-left: 20px;
+   
 }
 .blog-site-title h1,
 .blog-site-title h2{
    color: #000000;
-   font-size: 22px;
+   font-size: 30px;
    font-family:Times;
+   #margin-left: 21%; 
+   text-align:center;  
 }
 .blog-post {
    background: #fff;
@@ -937,11 +948,13 @@ footer .blog-post{
 }
 .post-container {
    width: 30.133%;
-   float: left;
+   
 }
+
 .entry-info, .entry-content {
    line-height: 30px;
    padding: 20px;
+   
 }
 .entry-title {
    padding:0 20px 20px;
@@ -972,10 +985,17 @@ footer .blog-post{
 .post-header > .entry-info {
    font-size: 14px;
    float:none;
+   display:none;
+   
 }
-.post-header .entry-author, .post-header .entry-standard, .post-header .entry-date, .post-header .entry-tag {
+.post-header .entry-standard, .post-header .entry-date, .post-header .entry-tag {
    color: #ffc800;
    margin:5px 10px 5px 0;
+}
+
+.post-header .entry-author{
+	display:none; 
+	
 }
 .catagory-type {
    margin: 10px auto 20px;
@@ -1159,9 +1179,11 @@ article .post.shown, .no-js article .post, .no-cssanimations article .post {
 .nav-previous {
    float: left;
    margin-right: 10px;
+   display:none;
 }
 .nav-next {
    float:right;
+   display:none;
 }
 .reply-count span {
    font-size: 14px;
@@ -1205,7 +1227,7 @@ article .post.shown, .no-js article .post, .no-cssanimations article .post {
 --------------------------------------------------------------*/
 .footer-background {
    background:white;
-   border-top:5px solid #ffc800;
+   #border-top:5px solid #ffc800;
    overflow:hidden;
 }
 .footer-content {
@@ -1285,6 +1307,7 @@ footer .angled-background {
    -webkit-box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
    -moz-box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
    box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
+   max-width:20%
 }
 .not-found.post-container {
    width: 100%;
@@ -1308,6 +1331,8 @@ footer .angled-background {
    border: none;
    margin-bottom: 0;
    margin-top: 0;
+   margin-left:30%;
+   margin-right:30%; 
    padding: 0;
 }
 /* Make sure embeds and iframes fit their containers */
@@ -1746,3 +1771,4 @@ footer .angled-background {
       width:33.33%;
    }
 }
+
